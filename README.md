@@ -20,4 +20,8 @@
 ```bash
 sudo apt update
 sudo apt install ettercap-text-only netdiscover nmap
+```
 
+##🌐 Step 1: Identify Network Interface
+```bash
+ip a
