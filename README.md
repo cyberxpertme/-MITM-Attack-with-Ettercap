@@ -25,3 +25,5 @@ sudo apt install ettercap-text-only netdiscover nmap
 ##🌐 Step 1: Identify Network Interface
 ```bash
 ip a
+```
+Example interface: eth0, wlan0, etc.
