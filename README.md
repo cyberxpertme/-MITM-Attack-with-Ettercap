@@ -44,7 +44,7 @@ Note the IPs of:
 
 Victim device → VICTIM_IP
 
-Gateway (router) → GATEWAY_IP
+Victim → VICTIM_IP_2
 
 Your interface → INTERFACE
 
